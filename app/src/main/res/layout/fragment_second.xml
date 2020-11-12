@@ -24,11 +24,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="move"
+        android:text="second fragment"
+        android:textSize="20sp"
         />
 
-    <com.guohao.guokeui.view.ViewForGradientMove
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
 </androidx.constraintlayout.widget.ConstraintLayout>
