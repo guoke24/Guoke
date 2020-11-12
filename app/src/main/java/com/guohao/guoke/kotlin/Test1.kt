@@ -1,4 +1,4 @@
-package com.guohao.guoke.learn
+package com.guohao.guoke.kotlin
 
 var age : Int = 18;
 val name : String = "guohao" // val 不可变

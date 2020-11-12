@@ -8,7 +8,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
-import com.guohao.guoke.learn.OneActivity
+import com.guohao.guoke.kotlin.OneActivity
 
 import kotlinx.android.synthetic.main.activity_main.*
 
