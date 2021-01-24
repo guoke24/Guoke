@@ -1,4 +1,4 @@
 rootProject.name='Guoke'
 include ':app'
 include ':guokeui'
-project(':guokeui').projectDir = new File("GuokeUI\\guokeui")
+project(':guokeui').projectDir = new File(rootDir, 'GuoKeUI/guokeui/')
