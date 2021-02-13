@@ -23,3 +23,11 @@ fun printlen(str : String) : String{
 
     return str
 }
+
+object Object1{
+    var name = "guohao";
+    fun cry(){
+        printlen("I am Object1 ")
+    }
+
+}
