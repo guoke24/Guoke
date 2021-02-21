@@ -27,6 +27,7 @@ class MainActivity29 : AppCompatActivity() {
     }
 
     fun test3(v: View){
-        displayDashboard2(mContent)
+        //displayDashboard2(mContent)
+        displayDashboard(mContent)
     }
 }

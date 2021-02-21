@@ -8,13 +8,13 @@ data class User(var name: String)
 fun main(args: Array<String>){
 
     val user = User("guohao")
-    // let 和 run 函数都会返回闭包的执行结果，不同的是 let 有闭包参数，run 没有
+    // let 和 run 函数都会返回闭包的执行结果，let 有闭包参数，run 没有
     val letResult = user.let { user: User -> "let::${user.javaClass}"  }
     val runResult = user.run { "run::${this.javaClass}" }
     println(letResult)
     println(runResult)
 
-    // also 和 apply 函数都不会返回闭包的执行结果，不同的是 also 有闭包参数，apply 没有
+    // also 和 apply 函数都不会返回闭包的执行结果，also 有闭包参数，apply 没有
     user.also { println("also::${it.javaClass}") }
     user.apply { println("apply::${this.javaClass}") }
 

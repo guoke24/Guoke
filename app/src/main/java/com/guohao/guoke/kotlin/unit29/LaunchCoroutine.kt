@@ -20,11 +20,14 @@ fun displayDashboard(textView: TextView) = runBlocking {
 
         // ------ 分割线 ------
 
-        val job = async(AndroidCommonPool) {
+        // 这个是有效写法
+        val deferred = async(AndroidCommonPool) {
             //不考虑异常的情况
             mOkHttpClient.newCall(mRequest).execute().body()?.string()
         }
-        textView.text = job.await()
+        // 这里虽然没调用 suspend 函数，但指定了线程池，所以也是异步执行？
+
+        textView.text = deferred.await()
 
     }
 }
