@@ -10,6 +10,7 @@ import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.guohao.guoke.jetpack.JetPackTest1Activity
 import com.guohao.guokeui.GuokeUIMainActivity
+import com.guohao.guokeui.hencoder.HenCoderMainActivity
 import kotlinx.android.synthetic.main.fragment_first.*
 
 /**
@@ -43,6 +44,10 @@ class FirstFragment : Fragment() {
             // 因此此处可以用 let 和 also；
             // 由考虑到不需要闭包的执行结果，所以用 let
             activity?.let { it1 -> JetPackTest1Activity.start(it1) }
+        }
+
+        btn_HenCoderUI.setOnClickListener {
+            startActivity(Intent(activity, HenCoderMainActivity::class.java))
         }
 
     }
