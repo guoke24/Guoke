@@ -44,6 +44,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_1" />
 
+    <Button
+        android:id="@+id/btn_SmallApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go SmallApp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_HenCoderUI" />
+
     <TextView
         android:id="@+id/textview_first"
         android:layout_width="wrap_content"

@@ -5,6 +5,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 // 泛型测试
@@ -67,5 +68,38 @@ class fanxing_test extends Activity {
     // kotlin
     // 使用关键字 out 来支持协变，等同于 Java 中的上界通配符 ? extends。
     // 使用关键字 in 来支持逆变，等同于 Java 中的下界通配符 ? super。
+
+    interface Eater<T>{
+        void eat(T food);
+    }
+
+    // 这个类会失去父类 ArrayList 的泛型特性，从而导致 AppleArrayList 接受的元素类型是 Object。
+    class AppleArrayList extends ArrayList{
+
+    }
+
+    // 改写 AppleArrayList ，让它依然失去来自父类 ArrayList 的泛型特性，
+    // 但 AppleArrayList 接受的元素类型改变为 Apple 而不是 Object
+    class AppleArrayList2 extends ArrayList<Apple>{
+
+    }
+
+    class Apple{
+
+    }
+
+    class ReversableArrayList<T> extends ArrayList<T>{
+        public void reverse() {
+            Collections.reverse(this);
+        }
+    }
+
+    interface Eater2<T extends Food>{
+        void eat(T food);
+    }
+
+    class Food{
+
+    }
 
 }

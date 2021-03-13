@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.guohao.guoke.jetpack.JetPackTest1Activity
 import com.guohao.guokeui.GuokeUIMainActivity
 import com.guohao.guokeui.hencoder.HenCoderMainActivity
+import com.guohao.guokeui.smallapp.SmallAppMainActivity
 import kotlinx.android.synthetic.main.fragment_first.*
 
 /**
@@ -48,6 +49,10 @@ class FirstFragment : Fragment() {
 
         btn_HenCoderUI.setOnClickListener {
             startActivity(Intent(activity, HenCoderMainActivity::class.java))
+        }
+
+        btn_SmallApp.setOnClickListener {
+            startActivity(Intent(activity, SmallAppMainActivity::class.java))
         }
 
     }
