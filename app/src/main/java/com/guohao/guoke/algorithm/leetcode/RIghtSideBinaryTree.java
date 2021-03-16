@@ -10,6 +10,7 @@ import java.util.Stack;
 
 
 // 给定一棵二叉树，想象自己站在它的右侧，按照从顶部到底部的顺序，返回从右侧所能看到的节点值。
+// 注意，每层只返回第一个能看到的节点
 // https://leetcode-cn.com/problems/binary-tree-right-side-view/
 // 解法均来源于：https://leetcode-cn.com/problems/binary-tree-right-side-view/solution/er-cha-shu-de-you-shi-tu-by-leetcode-solution/
 public class RIghtSideBinaryTree {
@@ -26,7 +27,7 @@ public class RIghtSideBinaryTree {
             nodeStack.push(root);
             depthStack.push(0);
 
-            while (!nodeStack.isEmpty()) {
+            while (!nodeStack.isEmpty()) { // 节点栈不为空则继续
                 TreeNode node = nodeStack.pop();
                 int depth = depthStack.pop();
 
@@ -35,6 +36,7 @@ public class RIghtSideBinaryTree {
                     max_depth = Math.max(max_depth, depth);
 
                     // 如果不存在对应深度的节点我们才插入
+                    // 这里保证了：每层只返回第一个能看到的节点
                     if (!rightmostValueAtDepth.containsKey(depth)) {
                         rightmostValueAtDepth.put(depth, node.val);
                     }
