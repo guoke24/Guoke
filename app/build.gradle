@@ -51,6 +51,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
 
     implementation("com.squareup.okhttp3:okhttp:3.2.0")
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
 
     api project(':guokeui')
     //implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
