@@ -29,7 +29,7 @@ fun main(args:Array<String>){
 
     println("------")
 
-    repeat(10){// 1 到 9
+    repeat(10){// 0 到 9
         println(it) // it 是当前的计数器，可知循环到了第几次
     }
 

@@ -1,5 +1,6 @@
 package com.guohao.guoke
 
+import android.app.Service
 import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -55,6 +56,8 @@ class MainActivity : AppCompatActivity() {
             // 调整
             startActivity(Intent(this, OneActivity::class.java))
         }
+
+        getSystemService(Service.VIBRATOR_SERVICE)
     }
 
     // 创建右上角的菜单
