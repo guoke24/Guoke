@@ -1,4 +1,4 @@
-package com.guohao.guoke.kotlin.kaixue.staticreplace;
+package com.guohao.guoke.kotlin_self.object_and_companion_test;
 
 public class TestMainJava {
 
