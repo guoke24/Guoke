@@ -5,7 +5,7 @@ package com.guoke.baselib.singleinstance;
  */
 public class DLCInstance {
 
-    private static DLCInstance instance;
+    private static volatile DLCInstance instance;
 
     private DLCInstance(){ }
 

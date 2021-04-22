@@ -7,15 +7,13 @@ package com.guoke.baselib.singleinstance;
  */
 public class StaticInstance {
 
-    private StaticInstance(){
-
-    }
+    private StaticInstance(){}
 
     public static class Holder{
 
         private static StaticInstance instance = new StaticInstance();
 
-        //
+        // 获取单例的方法，放在内部类
         public static StaticInstance getInstance(){
             return instance;
         }
@@ -27,10 +25,9 @@ public class StaticInstance {
 // getInstance 函数放在外部类的写法
 class StaticInstance2 {
 
-    private StaticInstance2(){
+    private StaticInstance2(){}
 
-    }
-
+    // 获取单例的方法，放在外部类
     public static StaticInstance2 getInstance(){
         return Holder.instance;
     }
