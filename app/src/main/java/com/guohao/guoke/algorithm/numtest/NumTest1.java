@@ -39,5 +39,6 @@ public class NumTest1 {
         System.out.println(Integer.toBinaryString(-2));
 
     }
+    // 相关解析在 MWeb 文章：《Int 溢出和大数的那些事》
 
 }
