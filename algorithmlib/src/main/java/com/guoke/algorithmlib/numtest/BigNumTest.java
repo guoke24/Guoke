@@ -1,4 +1,4 @@
-package com.guohao.guoke.algorithm.numtest;
+package com.guoke.algorithmlib.numtest;
 
 import java.math.BigInteger;
 

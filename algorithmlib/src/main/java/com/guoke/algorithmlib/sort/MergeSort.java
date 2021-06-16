@@ -1,4 +1,4 @@
-package com.guohao.guoke.algorithm.sort;
+package com.guoke.algorithmlib.sort;
 
 import java.util.Arrays;
 

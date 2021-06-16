@@ -1,8 +1,16 @@
-package com.guohao.guoke.algorithm;
+package com.guoke.algorithmlib;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+ * 本类包含内容：
+ *
+ * 通过迭代器移除元素
+ *
+ * 四种遍历
+ *
+ */
 public class ArrayListTest {
 
     static int out;// 类的静态变量，被初始化，默认为 0；
@@ -34,8 +42,9 @@ public class ArrayListTest {
 
         Iterator<Integer> integerIterator = arrayList.iterator();
 
-        System.out.println(arrayList.iterator().getClass().getName());
+//        System.out.println(arrayList.iterator().getClass().getName());
 
+        // 移除 arrayList 中负数的写法
         while(integerIterator.hasNext()){
             int tmp = integerIterator.next();
             System.out.println(tmp);
@@ -44,6 +53,7 @@ public class ArrayListTest {
 
         System.out.println("---");
 
+        // === 四种遍历 start ===
         // 写法 ok
 //        for (int i = 0;i < arrayList.size();i++){
 //            System.out.println(arrayList.get(i));
@@ -68,7 +78,7 @@ public class ArrayListTest {
 //            int tmp = integerIterator2.next();
 //            System.out.println(tmp);
 //        }
-
+        // === 四种遍历 end ===
     }
 
     private ArrayList<Integer> removeNegativeNumber(ArrayList<Integer>  arrayList){

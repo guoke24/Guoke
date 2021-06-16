@@ -1,4 +1,4 @@
-package com.guohao.guoke.algorithm.numtest;
+package com.guoke.algorithmlib.numtest;
 
 public class NumTest1 {
 

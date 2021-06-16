@@ -1,11 +1,11 @@
-package com.guohao.guoke.algorithm.stringtest;
+package com.guoke.algorithmlib.stringtest;
 
 public class StringTest1 {
 
     /**
      * 测试 String 的实例，
      * 没有 new 或 不涉及实例拼接的，则直接引用常量池，
-     * 使用来 new，或者拼接来实例，则在堆中创建对象
+     * 使用 new，或者拼接，则在堆中创建对象
      * 还可以用 intern() 方法来返回常量池中的对象引用
      *
      * "==" 检查两个变量的地址；

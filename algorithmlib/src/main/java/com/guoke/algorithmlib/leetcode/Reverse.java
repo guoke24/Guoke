@@ -1,4 +1,4 @@
-package com.guohao.guoke.algorithm.leetcode;
+package com.guoke.algorithmlib.leetcode;
 
 import java.util.Stack;
 

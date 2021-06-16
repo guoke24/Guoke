@@ -1,4 +1,4 @@
-package com.guohao.guoke.algorithm;
+package com.guoke.algorithmlib;
 
 import android.util.SparseArray;
 

@@ -1,4 +1,4 @@
-package com.guohao.guoke.algorithm;
+package com.guoke.algorithmlib;
 
 import java.util.ArrayList;
 import java.util.Collections;
