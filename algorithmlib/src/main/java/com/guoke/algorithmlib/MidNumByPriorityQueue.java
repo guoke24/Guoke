@@ -1,5 +1,9 @@
 package com.guoke.algorithmlib;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
@@ -8,7 +12,8 @@ import java.util.Comparator;
 import java.util.Queue;
 import java.util.Stack;
 
-public class QueueTest {
+@RequiresApi(api = Build.VERSION_CODES.N)
+public class MidNumByPriorityQueue {
 
 
     Queue<Integer> queue = new LinkedList<>();
@@ -66,13 +71,13 @@ public class QueueTest {
             minHeap.offer(maxHeap.poll());
         }
         count++;
-        System.out.println(QueueTest.GetMedian());
+        System.out.println(MidNumByPriorityQueue.GetMedian());
     }
     public static int GetMedian() {
         return maxHeap.peek();
     }
     public static void main(String[] args) {
-        QueueTest t = new QueueTest();
+        MidNumByPriorityQueue t = new MidNumByPriorityQueue();
         t.Insert(1);
         t.Insert(2);
         t.Insert(0);
@@ -80,25 +85,5 @@ public class QueueTest {
         t.Insert(10);
         t.Insert(22);
     }
-
-
-    PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
-
-    int k = 5;
-
-    public void InsertTest(Integer num) {
-        if(priorityQueue.size() < k){
-            priorityQueue.offer(num);
-        }else{
-            Integer tmp = priorityQueue.peek();
-            if( num < tmp ){
-                priorityQueue.poll();
-                priorityQueue.offer(num);
-            }
-        }
-    }
-
-
-
 }
 

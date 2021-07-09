@@ -2,6 +2,9 @@ package com.guoke.algorithmlib.sort;
 
 import java.util.Arrays;
 
+/**
+ * 归并排序
+ */
 public class MergeSort {
     public static void main(String[] args) {
         int[] arr = {49, 38, 65, 97, 76, 13, 27, 50};
@@ -27,16 +30,19 @@ public class MergeSort {
     // 数组 a 中，下标 left 到 mid 已经排好序，下标 mid + 1 到 right 也已经排好序
     public static void customDoubleMerge(int[] a, int[] tmp, int left, int mid, int right) {
         int p1 = left, p2 = mid + 1, k = left;
+
         while (p1 <= mid && p2 <= right) {
             if (a[p1] <= a[p2])
                 tmp[k++] = a[p1++];
             else
                 tmp[k++] = a[p2++];
         }
+
         while (p1 <= mid)
             tmp[k++] = a[p1++];
         while (p2 <= right)
             tmp[k++] = a[p2++];
+
         // 复制回原素组
         for (int i = left; i <= right; i++)
             a[i] = tmp[i];

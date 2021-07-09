@@ -1,18 +1,41 @@
 package com.guoke.algorithmlib;
 
+import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.graphics.Bitmap;
+import android.os.Handler;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class HashMapSort {
 
     public static void main(String[] args){
 
-
+        HashSet hashSet;
+        LinkedList linkedList;
+        List list;
+        LinkedHashSet linkedHashSet;
+        TreeMap treeMap;
+        TreeSet treeSet;
+        Handler handler;
+        HashMap hashMap;
+        String s;
+        SQLiteOpenHelper sqLiteOpenHelper;
+        Bitmap bitMap;
+        CopyOnWriteArrayList copyOnWriteArrayList;
 
     }
 

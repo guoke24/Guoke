@@ -2,6 +2,9 @@ package com.guoke.algorithmlib.leetcode;
 
 import java.util.HashMap;
 
+/**
+ * 在一个数组中，找出和为 x 的两个数
+ */
 public class TwoNumSum {
     // 时间复杂度：n + n
     // 空间复杂度，额外使用了空间：n
